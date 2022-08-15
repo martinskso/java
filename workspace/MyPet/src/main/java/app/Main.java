@@ -1,8 +1,8 @@
 package app;
 
 import bd.Conexao;
-import model.Cidade;
-import repository.CidadeRepository;
+import model.Cliente;
+import repository.ClienteRepository;
 
 public class Main {
 
@@ -15,7 +15,7 @@ public class Main {
          
 		ClienteRepository clienteRepository = new ClienteRepository();
 		
-		Cliente cliente = new Cliente(1, "maringa", "pr");
+		Cliente cliente = new Cliente(1, "Maria", "9595-9595", "Rua A, 23", "maria@gmail.com");
   		
         clienteRepository.inserir(cliente);
   		

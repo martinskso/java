@@ -1,0 +1,9 @@
+[2022-08-10 19:48:58] [info]  [ 8356] Apache Commons Daemon procrun (1.3.1.0 64-bit) started.
+[2022-08-10 19:48:58] [info]  [ 8356] Running Service 'Tomcat9'...
+[2022-08-10 19:48:58] [info]  [ 9796] Starting service...
+[2022-08-10 19:49:00] [info]  [ 9796] Service started in 1653 milliseconds.
+[2022-08-10 19:49:41] [info]  [ 8356] Service SERVICE_CONTROL_STOP signalled.
+[2022-08-10 19:49:41] [info]  [ 3024] Stopping service...
+[2022-08-10 19:49:42] [info]  [ 3024] Service stop thread completed.
+[2022-08-10 19:49:42] [info]  [ 8356] Run service finished.
+[2022-08-10 19:49:42] [info]  [ 8356] Apache Commons Daemon procrun finished.

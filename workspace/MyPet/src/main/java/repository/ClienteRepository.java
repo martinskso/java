@@ -1,6 +1,15 @@
 package repository;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
+
+import bd.Conexao;
+import interfaces.IPadraoRepository;
+import model.Cliente;
 
 public class ClienteRepository implements IPadraoRepository {
 	
@@ -24,7 +33,7 @@ public class ClienteRepository implements IPadraoRepository {
 	    public void inserir(Object o) {    
 	        Cliente c = (Cliente) o;
 	        try {
-	            sql = "INSERT INTO CIDADE(CODIGO,NOME,TELEFONE, ENDERECO, EMAIL) VALUES (?,?,?,?,?)";
+	            sql = "INSERT INTO CLIENTE(CODIGO, NOME, ENDERECO, TELEFONE, EMAIL) VALUES (?,?,?,?,?)";
 	            PreparedStatement ps = con.prepareStatement(sql);
 	            ps.setInt(1, 	c.getCodigo());
 	            ps.setString(2, c.getNome());
@@ -36,7 +45,7 @@ public class ClienteRepository implements IPadraoRepository {
 	            status = "Registro incluido com sucesso!";
 	            System.out.println(status);
 	        } catch (SQLException e) {
-	            status = "N�o foi possivel incluir o registro erro: "
+	            status = "Não foi possivel incluir o registro erro: "
 	                    + e.getMessage() + " sql executado: " + sql;
 	        }    
 	    }
@@ -56,7 +65,7 @@ public class ClienteRepository implements IPadraoRepository {
 	            ps.close();
 	            status = "Registro alterado com sucesso!";
 	        } catch (SQLException e) {
-	            status = "N�o foi possivel alterar o registro erro: "
+	            status = "Não foi possivel alterar o registro erro: "
 	                    + e.getMessage() + " sql executado: " + sql;
 	        }
 	    }
@@ -90,8 +99,8 @@ public class ClienteRepository implements IPadraoRepository {
 	                Cliente c = new Cliente(
 	                        rs.getInt("codigo"),                    
 	                        rs.getString("nome"),
-	                        rs.getString("endereco"));
-	                		rs.getString("telefone"));
+	                        rs.getString("endereco"),
+	                		rs.getString("telefone"),
 	                		rs.getString("email"));
 	                clientes.add(c);
 	            }
@@ -116,8 +125,8 @@ public class ClienteRepository implements IPadraoRepository {
 	                c = new Cliente(
 	                        rs.getInt("codigo"),                    
 	                        rs.getString("nome"),
-	                        rs.getString("endereco"));
-            				rs.getString("telefone"));
+	                        rs.getString("endereco"),
+            				rs.getString("telefone"),
             				rs.getString("email"));                
 	            }
 	        } catch (SQLException e) {

@@ -1,0 +1,8 @@
+127.0.0.1 - - [09/Aug/2022:19:53:18 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:19:53:40 -0300] "GET /MyPet/WEB-INF/classes/bd/Conexao.java HTTP/1.1" 404 694
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:19:54:39 -0300] "GET /MyPet/WEB-INF/classes/app/Main.java HTTP/1.1" 404 694
+127.0.0.1 - - [09/Aug/2022:19:57:44 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:19:57:45 -0300] "GET /MyPet/WEB-INF/classes/repository/ClienteRepository.java HTTP/1.1" 404 694
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:19:59:12 -0300] "GET /TerceiroBimestre/WEB-INF/classes/bd/Conexao.java HTTP/1.1" 404 694
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:19:59:39 -0300] "GET /TerceiroBimestre/WEB-INF/classes/app/Main.java HTTP/1.1" 404 694
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:20:03:09 -0300] "GET /TerceiroBimestre/WEB-INF/classes/bd/Conexao.java HTTP/1.1" 404 694
